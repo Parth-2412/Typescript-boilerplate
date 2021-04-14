@@ -1,0 +1,29 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "rules" : {
+      "object-curly-newline": ["error", {
+        "ObjectExpression": "always",
+        "ObjectPattern": { "multiline": true },
+        "ImportDeclaration": "never",
+        "ExportDeclaration": { "multiline": true}
+      }],
+      "curly": ["error", "multi-line"],
+      "indent": ["error", "tab"],
+      "prefer-const": "error",
+      "semi": ["error", "always"],
+      "no-empty-function": "error",
+      "comma-dangle": ["error", "always-multiline"],
+      "brace-style": ["error", "stroustrup"],
+      "no-var": "error",
+      "yoda": "error"
+    }
+  }
